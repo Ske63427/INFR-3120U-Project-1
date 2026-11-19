@@ -1,8 +1,242 @@
+
+/* CampusFind - Homepage Styles */
+
+/* General page styling */
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f6faf8;
+    color: #172d27;
+    line-height: 1.6;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 a {
-  color: #00B7FF;
+    text-decoration: none;
+}
+
+/* Navigation */
+
+.site-header {
+    background-color: white;
+    border-bottom: 1px solid #e1ebe5;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px 24px;
+    overflow: hidden;
+}
+
+.brand {
+    float: left;
+    color: #174e43;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.brand-logo {
+    width: 35px;
+    height: 40px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.nav-links {
+    float: right;
+    padding-top: 7px;
+}
+
+.nav-links a {
+    display: inline-block;
+    margin-left: 20px;
+    color: #172d27;
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    color: #174e43;
+}
+
+.nav-links .nav-button {
+    background-color: #174e43;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+}
+
+.nav-links .nav-button:hover {
+    background-color: #103a32;
+}
+
+/* Hero section */
+
+.hero {
+    background-color: #e3f5eb;
+    padding: 100px 24px;
+}
+
+.hero-content {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.hero-label {
+    display: inline-block;
+    background-color: #d0efe0;
+    color: #174e43;
+    padding: 7px 13px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: 60px;
+    line-height: 1.2;
+    margin: 25px 0;
+}
+
+.hero h1 span {
+    display: block;
+    color: #174e43;
+}
+
+.hero p {
+    max-width: 620px;
+    color: #60766e;
+    font-size: 18px;
+}
+
+.hero-actions {
+    margin-top: 30px;
+}
+
+.primary-button,
+.secondary-button {
+    display: inline-block;
+    padding: 13px 25px;
+    margin-right: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.primary-button {
+    background-color: #174e43;
+    color: white;
+}
+
+.primary-button:hover {
+    background-color: #103a32;
+}
+
+.secondary-button {
+    border: 2px solid #174e43;
+    color: #174e43;
+}
+
+.secondary-button:hover {
+    background-color: #d0efe0;
+}
+
+/* Main content sections */
+
+.content-section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 70px 24px;
+}
+
+.content-section h2 {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.content-section p {
+    color: #60766e;
+}
+
+.coming-soon {
+    background-color: white;
+    border: 1px dashed #b8d4c4;
+    padding: 35px;
+    margin-top: 25px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Footer */
+
+.site-footer {
+    background-color: #103a32;
+    color: white;
+    text-align: center;
+    padding: 24px;
+}
+
+/* Responsive styling */
+
+@media screen and (max-width: 768px) {
+
+    .navbar {
+        text-align: center;
+    }
+
+    .brand {
+        float: none;
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    .nav-links {
+        float: none;
+        padding-top: 0;
+    }
+
+    .nav-links a {
+        margin: 6px;
+    }
+
+    .hero {
+        padding: 65px 20px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .content-section {
+        padding: 50px 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .primary-button,
+    .secondary-button {
+        display: block;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .content-section h2 {
+        font-size: 26px;
+    }
 }
