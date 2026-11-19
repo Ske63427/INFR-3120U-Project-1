@@ -1,11 +1,112 @@
+
 <!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="CampusFind helps students report and discover lost and found items."
+  >
+
+  <title>CampusFind | Lost & Found</title>
+
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <header class="site-header">
+    <nav class="navbar">
+
+      <a href="/" class="brand">
+        <img
+          src="/images/logo.svg"
+          alt="CampusFind Logo"
+          class="brand-logo"
+        >
+        <span>CampusFind</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="#browse">Browse Items</a>
+        <a href="#about">About</a>
+        <a href="#report" class="nav-button">Report an Item</a>
+      </div>
+
+    </nav>
+  </header>
+
+  <!-- Main homepage -->
+  <main>
+
+    <section class="hero">
+      <div class="hero-content">
+
+        <span class="hero-label">CAMPUS LOST & FOUND</span>
+
+        <h1>
+          Lost something?
+          <span>Let's find it.</span>
+        </h1>
+
+        <p>
+          CampusFind connects students with their missing belongings.
+          Report lost or found items and help make your campus
+          a more connected community.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#report" class="primary-button">
+            Report an Item
+          </a>
+
+          <a href="#browse" class="secondary-button">
+            Browse Items
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="browse" class="content-section">
+      <h2>Browse Lost & Found Items</h2>
+      <p>
+        Discover items reported by students across campus.
+      </p>
+      <p class="coming-soon">
+        Item listings will appear here soon.
+      </p>
+    </section>
+
+    <section id="report" class="content-section">
+      <h2>Report an Item</h2>
+      <p>
+        Lost or found something? Help the campus community
+        by submitting a report.
+      </p>
+      <p class="coming-soon">
+        The reporting form is currently being developed.
+      </p>
+    </section>
+
+    <section id="about" class="content-section">
+      <h2>About CampusFind</h2>
+      <p>
+        CampusFind is a student-built platform designed
+        to make reporting and recovering lost belongings
+        easier for university students.
+      </p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 CampusFind | INFR 3120U Group Project</p>
+  </footer>
+
+</body>
 </html>
