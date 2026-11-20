@@ -1,0 +1,32 @@
+<form action="<%= action %>" method="POST" class="report-form">
+    <label>Item name
+        <input name="title" required value="<%= item.title || '' %>">
+    </label>
+
+    <label>Category
+        <select name="category" required>
+            <option value="" disabled <%= !item.category ? 'selected' : '' %>>Select a category</option>
+            <% ['Electronics', 'Clothing', 'ID / Cards', 'Keys', 'Bags', 'Books & Stationery', 'Water Bottles', 'Jewellery & Accessories', 'Other'].forEach(cat => { %>
+                <option value="<%= cat %>" <%= item.category === cat ? 'selected' : '' %>><%= cat %></option>
+            <% }) %>
+        </select>
+    </label>
+
+    <label>Location
+        <input name="location" required placeholder="e.g. Library, 2nd floor" value="<%= item.location || '' %>">
+    </label>
+
+    <label>Date
+        <input type="date" name="date" value="<%= item.date ? item.date.toISOString().slice(0, 10) : '' %>">
+    </label>
+
+    <label>Description
+        <textarea name="description" rows="3"><%= item.description || '' %></textarea>
+    </label>
+
+    <label>Contact
+        <input name="contact" required placeholder="Email or phone" value="<%= item.contact || '' %>">
+    </label>
+
+    <button type="submit" class="primary-button"><%= buttonLabel %></button>
+</form>

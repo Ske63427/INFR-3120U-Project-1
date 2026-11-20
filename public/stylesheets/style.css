@@ -240,3 +240,11 @@ a {
         font-size: 26px;
     }
 }
+/*scrollable window by aidan*/
+.browse-window {
+    max-height: 50vh; /*viewheight limit*/
+    overflow-y: auto;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+}

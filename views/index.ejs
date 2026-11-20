@@ -74,12 +74,10 @@
 
     <section id="browse" class="content-section">
       <h2>Browse Lost & Found Items</h2>
-      <p>
-        Discover items reported by students across campus.
-      </p>
-      <p class="coming-soon">
-        Item listings will appear here soon.
-      </p>
+      <p>Discover items reported by students across campus.</p>
+      <div class="browse-window">
+        <%- include('components/item-list', {items}) %>
+      </div>
     </section>
 
     <section id="report" class="content-section">
@@ -88,9 +86,11 @@
         Lost or found something? Help the campus community
         by submitting a report.
       </p>
-      <p class="coming-soon">
-        The reporting form is currently being developed.
-      </p>
+      <%- include('components/item-form', {
+        item: {},
+        action: '/items',
+        buttonLabel: 'Submit Report'
+      }) %>
     </section>
 
     <section id="about" class="content-section">
