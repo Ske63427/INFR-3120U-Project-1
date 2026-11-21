@@ -13,4 +13,4 @@ CampusFind is a lost-and-found web app for students built with Node.js, Express,
 ## Contributors
 Aidan Samaroo, @Ske63427, aidan.samaroo@ontariotechu.net\
 Farhan Hossain, @fhossain-dev, farhan.hossain@ontariotechu.net\
-Eitaz Chaudhry, @eitzazchaudhry-ship-it, eitaz.chaudhry@ontariotechu.net
+Eitzaz Chaudhry, @eitzazchaudhry-ship-it, eitzaz.chaudhry@ontariotechu.net
